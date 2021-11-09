@@ -5,23 +5,29 @@ html {
 body {
 	font-family: 'Noto Sans TC', '微軟正黑體', sans-serif, Arial;
 	font-weight: 300;
-	background: #dda15e;
-  background-image:url( 'http://algalreef.weebly.com/uploads/8/4/2/6/84265322/2015_orig.png' );
-  background-size:cover;
-  background-repeat:no-repeat;
+ 	background-size:cover;
+ 	background-repeat:no-repeat;
 	/* 背景顏色 */
 	overflow-x: hidden;
 }
 
-h1, h2 {
-	font-family: 'GenYoMin TW', '微軟正黑體', sans-serif, Arial;
-    font-weight: 600;
-}
-
 h1 {
 	font-size: 2rem;
+	font-family: 'GenYoMin TW', '微軟正黑體', sans-serif, Arial;
+    font-weight: 600;
+	margin-left: 1em;  
 }
-
+h2{
+	margin-left: 2em; 
+}
+p{
+	margin-left: 4em;  
+	margin-right: 4em; 
+}
+.OneContent{
+	margin-left: 8em;  
+	margin-right: 8em; 
+}
 #FirstTitle{
     color: #fff;
     font-size: 120px;
@@ -57,4 +63,7 @@ h1 {
 	color: rgb(255, 0, 55);
 }
 
-
+footer > p{
+	text-align:center;
+	color:black;
+}
