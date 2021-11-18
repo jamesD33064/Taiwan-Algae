@@ -7,7 +7,6 @@ body {
 	font-weight: 300;
  	background-size:cover;
  	background-repeat:no-repeat;
-	/* 背景顏色 */
 	overflow-x: hidden;
 }
 
@@ -31,6 +30,9 @@ p{
 #FirstTitle{
     color: #fff;
     font-size: 900%;
+}
+#sec1{
+	margin-top: 35%;
 }
 /* header */
 .menu ul {
