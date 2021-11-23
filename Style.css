@@ -127,8 +127,9 @@
     color: rgb(0, 166, 172);
     text-align: center;
     font-weight: bold;
-    border: rgb(21, 173, 179) solid 4px;
-    border-radius: 10px;
+    border: rgb(21, 173, 179) solid 0.3vw;
+    border-radius: 1vw;
+    font-size: 1.25vw;
 }
 .hot .more.active, .hot .more:hover {
     background:#eee;
