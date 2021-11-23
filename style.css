@@ -1,71 +1,172 @@
-html {
-	overflow-x: hidden;
-	height: 100%;
-} 
-body {
-	font-family: 'Noto Sans TC', '微軟正黑體', sans-serif, Arial;
-	font-weight: 300;
- 	background-size:cover;
- 	background-repeat:no-repeat;
-	overflow-x: hidden;
+#nav {
+    list-style: none;
+    width: 350px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline;
+    white-space: nowrap;
+    margin-top: 1%;
+    margin-left: 45%;
+}
+#nav > li{
+    display: inline;
+    margin-right: 2%;
+}
+#Taiwan{
+    margin-left: 4%;
+    text-align:left;
+    display:inline;
+}
+#menu{
+    margin-right: 10%;
+    display:inline;
+}
+#nav li.active, #nav li:hover {
+    background:#eee;
+    color:rgb(0, 189, 195);
 }
 
-h1 {
-	font-size: 2rem;
-	font-family: 'GenYoMin TW', '微軟正黑體', sans-serif, Arial;
-    font-weight: 600;
-	margin-left: 1em;  
+#frontpapge{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
 }
-h2{
-	margin-left: 2em; 
+#word{
+    position:absolute;
+    z-index: 10;
 }
-p{
-	margin-left: 4em;  
-	margin-right: 4em; 
+#frontpapge > #word > h1{
+    display: block;
+    color: #eee;
+    font-style: italic;
+    text-shadow:3px 3px 3px #cccccc;
+    font-size: 400%;
+    justify-content: center; 
+    align-items:center;
 }
-.OneContent{
-	margin-left: 8em;  
-	margin-right: 8em; 
+#select{
+    display: inline-block;
 }
-#FirstTitle{
-    color: #fff;
-    font-size: 900%;
+ #frontselect_1{
+    color: #929292;
+    position: relative;
+    font-family: 'PingFangTC', '微軟正黑體', sans-serif;
+    padding: 8px;
+    height: 40px;  
+    border: 1px solid #ccc;
+    width: 250px; 
+    margin-right: 10px;
+    margin-left: auto;
 }
-#sec1{
-	margin-top: 35%;
+#frontselect_2{
+    color: #929292;
+    position: relative;
+    font-family: 'PingFangTC', '微軟正黑體', sans-serif;
+    padding: 8px;
+    height: 40px;  
+    border: 1px solid #ccc;
+    width: 350px; 
+    margin-right: 10px;
+    margin-left: auto;
 }
-/* header */
-.menu ul {
-	width: 10%;
-	text-align: right;
-	position: fixed;
-	background-color: #2b32293d;
-	padding-bottom: 15px;
-	margin-top: 50px;
-	transform: translateX(675%);
-	transition: transform 2s ease-in-out;
+#search{
+    position: relative;
+    display: inline-block;
 }
-.menu ul li {
-	display: block;
-	line-height: 50px;
-	cursor: pointer;
-	transition: line-height 0.6s;
+#content{
+    font-weight:bolder;
+    color: rgb(0, 189, 195);
+    margin-left: 5%;
 }
-
-.menu ul li a {
-	padding: 5px 10px;
-	margin-right: 15px;
-	transition: background-color 0.6s, color 0.6s;
-	/* 按鈕顏色 */
-	color: #fff;
+#content_1{
+    color: rgb(133, 133, 133);
+    margin-left: 5%;
 }
-
-.menu ul li:hover a, .menu ul li a.active {
-	background-color: transparent;
-	color: rgb(255, 0, 55);
+.hot{
+    height: 20vw;
+    width: 20.5vw;
+    position: relative;
+    border-radius: 10px;
+    box-shadow:3px 3px 3px #cccccc;
 }
-
-footer > p{
-	text-align:center;
-	color:black;
+.icon{
+    border-radius: 10px;
+    position: absolute;
+    top: 240px;
+    right : 0px;
+    display: block;
+    background: rgb(255, 255, 255);
+    box-shadow:3px 3px 3px #cccccc;
+    height: 10vw;
+    width: 20.5vw;
+}
+.icon > .top{
+    text-align: right;
+    margin-right: 12vw;
+    font-weight: bold;
+}
+.icon > .Local{
+    text-align: left;
+    margin-left: 4vw;
+    font-weight: bold;
+    color: rgb(138, 138, 138);
+    font-size:14px;
+}
+.icon > .more{
+    height: 1.8vw;
+    width: 12vw;
+    margin-left: 20%;
+    margin-right: 20%;
+    color: rgb(0, 166, 172);
+    text-align: center;
+    font-weight: bold;
+    border: rgb(21, 173, 179) solid 4px;
+    border-radius: 10px;
+}
+.time{
+    position: absolute;
+    top: 13%;
+    right : 1vw;
+    display: block;
+    width: 7.5vw;
+    height: 1.5vw;
+}
+.local{
+    position: absolute;
+    top: 3.7vw;
+    left : 2vw;
+    display: block;
+    width: 1.5vw;
+    height: 1.7vw;
+}
+#picture > ul > li{
+    margin-left: 3%;
+    margin-top: 3%;
+    padding: 3.5%;
+    display: inline-block;
+}
+#space{
+    margin-top: 15%;
+}
+.activ{
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
+}
+#sun{
+    margin-top: 5vw;
+    width:100%;
+    height:100%;
+}
+#last{
+    height: 75px;
+    background-color: rgb(21, 173, 179);
+}
+#footer{
+    position: relative;
+    height: 75px;
+    color: #eee;
+    background-color: rgb(21, 173, 179);
+    text-align: center;
 }
