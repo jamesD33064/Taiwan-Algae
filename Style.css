@@ -20,7 +20,7 @@
     height: 3vw;
     width: 3.3vw;
     display: inline;
-    transform: translate(1vw,0.55vw);
+    transform: translate(1vw,0.8vw);
 }
 #Taiwan{
     text-align:left;
@@ -187,3 +187,6 @@
     background-color: #08A6BB;
     text-align: center;
 }
+html {
+    scroll-behavior: smooth;
+  }
