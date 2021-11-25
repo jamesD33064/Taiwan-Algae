@@ -1,30 +1,36 @@
 #nav {
     list-style: none;
-    width: 350px;
     margin: 0;
     padding: 0;
     overflow: hidden;
     display: inline;
     white-space: nowrap;
     margin-top: 1%;
-    margin-left: 45%;
+    margin-left:28vw;
 }
 #nav > li{
     display: inline;
-    margin-right: 2%;
+    margin-right: 3vw;
+    font-size: 1.45vw;
+    color: rgb(94, 94, 94);
+}
+#view{
+    margin-left: 3vw;
+    margin-right: 2vw;
+    height: 3vw;
+    width: 3.3vw;
+    display: inline;
+    transform: translate(1vw,0.55vw);
 }
 #Taiwan{
-    margin-left: 4%;
     text-align:left;
     display:inline;
+    font-size: 2vw;
+    color: #08A6BB;
 }
-#menu{
-    margin-right: 10%;
-    display:inline;
-}
-#nav li.active, #nav li:hover {
+#nav li:hover {
     background:#eee;
-    color:rgb(0, 189, 195);
+    color: #08A6BB;
 }
 
 #frontpapge{
@@ -33,9 +39,9 @@
     align-items: center;
 }
 #frontphoto{
-    margin-top: 2.5vw;
+    margin-top: 1.5vw;
     width: 100%;
-    height: 600px;
+    height: 38vw;
 }
 #word{
     position:absolute;
@@ -43,10 +49,10 @@
 }
 #frontpapge > #word > h1{
     display: block;
-    color: #eee;
+    color: rgb(255, 255, 255);
     font-style: italic;
-    text-shadow:3px 3px 3px #cccccc;
-    font-size: 400%;
+    text-shadow:3px 3px 3px #6d6d6d;
+    font-size: 4vw;
     justify-content: center; 
     align-items:center;
 }
@@ -57,10 +63,9 @@
     color: #929292;
     position: relative;
     font-family: 'PingFangTC', '微軟正黑體', sans-serif;
-    padding: 8px;
-    height: 40px;  
+    height: 2.25vw;  
     border: 1px solid #ccc;
-    width: 250px; 
+    width: 15vw; 
     margin-right: 10px;
     margin-left: auto;
 }
@@ -68,25 +73,28 @@
     color: #929292;
     position: relative;
     font-family: 'PingFangTC', '微軟正黑體', sans-serif;
-    padding: 8px;
-    height: 40px;  
+    height: 2.25vw;  
     border: 1px solid #ccc;
-    width: 350px; 
+    width: 20vw; 
     margin-right: 10px;
     margin-left: auto;
 }
 #search{
-    position: relative;
-    display: inline-block;
+    width: 2.2vw;
+    height: 2.2vw;
+    transform: translate(0vw,0.9vw);
+    
 }
-#content{
+.content{
     font-weight:bolder;
-    color: rgb(0, 189, 195);
+    color: #08A6BB;
     margin-left: 5%;
+    font-size: 3vw;
 }
-#content_1{
+.content_1{
     color: rgb(133, 133, 133);
     margin-left: 5%;
+    font-size: 1.05vw;
 }
 .hot{
     height: 20vw;
@@ -124,24 +132,16 @@
     width: 12vw;
     margin-left: 20%;
     margin-right: 20%;
-    color: rgb(0, 166, 172);
+    color: #08A6BB;
     text-align: center;
     font-weight: bold;
-    border: rgb(21, 173, 179) solid 0.3vw;
+    border: #08A6BB solid 0.3vw;
     border-radius: 1vw;
     font-size: 1.25vw;
 }
-.hot .more.active, .hot .more:hover {
+.hot .more:hover {
     background:#eee;
-    color:rgb(0, 189, 195);
-}
-.time{
-    position: absolute;
-    top: 13%;
-    right : 1vw;
-    display: block;
-    width: 7.5vw;
-    height: 1.5vw;
+    color:#08A6BB;
 }
 .local{
     position: absolute;
@@ -157,8 +157,11 @@
     padding: 3.5%;
     display: inline-block;
 }
-#space{
+#space_1{
     margin-top: 5vw;
+}
+#space_2{
+    margin-top: 10vw;
 }
 .activ{
     text-align: center;
@@ -172,7 +175,7 @@
 }
 #last{
     height: 75px;
-    background-color: rgb(21, 173, 179);
+    background-color: #08A6BB;
 }
 .jsp{
     text-align: center;
@@ -181,6 +184,6 @@
     position: relative;
     height: 75px;
     color: #eee;
-    background-color: rgb(21, 173, 179);
+    background-color: #08A6BB;
     text-align: center;
 }

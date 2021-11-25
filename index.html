@@ -4,50 +4,23 @@
 	<title>index</title>
 	<link href="Style.css" rel="stylesheet">
     <script src="index.js"></script>
+    <title>雲端應用服務從0到1</title>
+    <meta charset="utf-8">
 </head>
 <body>
 <div>
-    <h1 id="Taiwan" >
-        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g clip-path="url(#clip0_53_24)">
-        <path d="M0 20C0 8.9543 8.9543 0 20 0C31.0457 0 40 8.9543 40 20C40 31.0457 31.0457 40 20 40C8.9543 40 0 31.0457 0 20Z" fill="url(#paint0_linear_53_24)"/>
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M43.2107 23.0979C43.2107 23.0979 37.5383 19.507 33.2539 19.507C27.5866 19.507 23.7974 24.4044 19.2131 24.4044C13.8703 24.4044 13.198 22.9892 10.2019 22.9892C5.96747 22.9892 0.378658 25.6429 -2.56875 24.6852C-4.94725 23.9123 -7.81065 22.3512 -7.81065 22.3512V35.4594L43.2107 36.2473V23.0979Z" fill="url(#paint1_linear_53_24)"/>
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M-6.96973 31.8558C-6.96973 31.8558 -6.71107 23.6089 -0.847368 22.3194C4.2794 21.5526 8.232 27.5046 12.8163 27.5046C18.1591 27.5046 20.6771 24.0503 25.8644 24.0503C29.6478 24.0503 33.3422 27.0535 38.4943 26.0125C49.9379 23.7003 44.0516 23.3036 44.0516 23.3036V36.4118L-6.96973 37.1997V31.8558Z" fill="url(#paint2_linear_53_24)"/>
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M-1.46149 32.3825C-1.46149 32.3825 0.999992 29.0743 2.93175 28.7413C4.8635 28.4082 5.93267 31.633 5.93267 31.633C5.93267 31.633 6.8371 31.492 7.32835 31.633C7.81959 31.7741 8.20858 32.3825 8.20858 32.3825C8.20858 32.3825 8.83426 30.4392 11.4323 30.4392C14.0304 30.4392 15.3504 33.0646 15.3504 33.0646C15.3504 33.0646 16.2152 32.3825 17.1158 32.3825C18.0164 32.3825 19.0358 33.0646 19.0358 33.0646C19.0358 33.0646 19.672 30.4392 22.3563 30.4392C25.0406 30.4392 26.1856 32.6672 26.1856 32.6672C26.1856 32.6672 27.2702 31.9828 28.324 31.9828C29.3778 31.9828 30.6354 32.6672 30.6354 32.6672C30.6354 32.6672 30.9883 30.5057 32.558 29.2318C34.1278 27.9578 37.5456 28.7413 37.5456 28.7413L39.4152 29.7254V40H-1.46149V32.3825Z" fill="url(#paint3_linear_53_24)"/>
-        <ellipse cx="24.7619" cy="9.52382" rx="3.33333" ry="3.33333" fill="#FEFFCA"/>
-        </g>
-        <defs>
-        <linearGradient id="paint0_linear_53_24" x1="0" y1="0" x2="0" y2="40" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#A2E9FF"/>
-        <stop offset="0.552083" stop-color="#DDFDFF"/>
-        </linearGradient>
-        <linearGradient id="paint1_linear_53_24" x1="43.2107" y1="19.507" x2="43.2107" y2="36.2473" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#AAF3FA"/>
-        <stop offset="1" stop-color="#D5FAFD"/>
-        </linearGradient>
-        <linearGradient id="paint2_linear_53_24" x1="-6.96973" y1="22.2512" x2="-6.96973" y2="37.1997" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#7EDEE7"/>
-        <stop offset="1" stop-color="#B5F1F5"/>
-        </linearGradient>
-        <linearGradient id="paint3_linear_53_24" x1="-1.46149" y1="28.4429" x2="-1.46149" y2="40" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#4297A8"/>
-        <stop offset="1" stop-color="#77C8D3"/>
-        </linearGradient>
-        <clipPath id="clip0_53_24">
-        <path d="M0 20C0 8.9543 8.9543 0 20 0C31.0457 0 40 8.9543 40 20C40 31.0457 31.0457 40 20 40C8.9543 40 0 31.0457 0 20Z" fill="white"/>
-        </clipPath>
-        </defs>
-        </svg>
-        Travel Taiwan
-    </h1>
-    <h3 id="menu" >
+    <span>
+        <img src="view.png" id="view">
+        <h1 id="Taiwan" >雲端應用服務從0到1</h1>
+    </span>
+    <span>
         <ul id="nav">
-            <li>認識藻礁</li>
-            <li>搶救藻礁</li>
-            <li>事件與呼籲</li>
-            <li>藻礁公投</li>
-        </ul>
-    </h3>
+            <li onclick="onTopClick(1)">認識藻礁</li>
+            <li onclick="onTopClick(2)">搶救藻礁</li>
+            <li onclick="onTopClick(3)">事件與呼籲</li>
+            <li onclick="onTopClick(4)">藻礁公投</li>
+        </ul>        
+    </span>
     <div id="frontpapge">
         <div id="word">
             <h1>藻礁</h1>
@@ -60,19 +33,15 @@
                         <option>所有縣市</option>
                     </select>
                 </div>
-                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" id="search">
-                    <rect width="42" height="42" rx="8" fill="#08A6BB"/>
-                    <path d="M19.2635 29.526C21.5407 29.5255 23.7523 28.7632 25.5461 27.3605L31.1859 33L33 31.186L27.3602 25.5465C28.7637 23.7526 29.5265 21.5407 29.5271 19.263C29.5271 13.6042 24.9226 9 19.2635 9C13.6045 9 9 13.6042 9 19.263C9 24.9217 13.6045 29.526 19.2635 29.526ZM19.2635 11.5657C23.5088 11.5657 26.9612 15.018 26.9612 19.263C26.9612 23.508 23.5088 26.9602 19.2635 26.9602C15.0183 26.9602 11.5659 23.508 11.5659 19.263C11.5659 15.018 15.0183 11.5657 19.2635 11.5657Z" fill="white"/>
-                    <path d="M21.2583 16.7815C21.8179 17.3454 22.1266 18.0905 22.1266 18.88H25.08C25.0813 18.1 24.9288 17.3275 24.6312 16.6071C24.3336 15.8867 23.8969 15.2327 23.3463 14.683C21.1106 12.439 17.2343 12.439 15 14.683L17.0851 16.7845C18.2074 15.6595 20.1419 15.6625 21.2583 16.7815Z" fill="white"/>
-                </svg>
+                <img src="search.png" id="search">
             </h2>
         </div>
             <img src="frontpapge.png" id="frontphoto">
     </div>
 
     <div>
-        <h1 id="content">認識藻礁</h1>
-        <p id="content_1">台灣的各個美景，都美不勝收。<br>等你一同來發現這座寶島的奧妙！</p>
+        <h1 class="content" id="i1">認識藻礁</h1>
+        <p class="content_1">台灣的各個美景，都美不勝收。<br>等你一同來發現這座寶島的奧妙！</p>
     </div>
     <div id="picture">
         <ul>
@@ -81,7 +50,6 @@
                     <img src="https://i.imgur.com/7UDQwTd.png" class="hot">
                     <span class="icon">
                         <p class="top">玫瑰哈維石藻</p>
-                        <img src="time.png"class="time">
                         <img src="local.png"class="local">
                         <p class="Local">1~2公尺深的亞潮帶</p>
                         <p class="more" onclick="more(p_1)">了解更多</p>
@@ -93,7 +61,6 @@
                     <img src="https://i.imgur.com/g8mq5h4.png" class="hot">
                     <span class="icon">
                         <p class="top">太平洋殼葉藻</p>
-                        <img src="time.png"class="time">
                         <img src="local.png"class="local">
                         <p class="Local">2-3公尺深的亞潮帶</p>
                         <p class="more" onclick="more(p_2)">了解更多</p>
@@ -105,7 +72,6 @@
                     <img src="https://i.imgur.com/2gmbp83.png" class="hot">
                     <span class="icon">
                         <p class="top">波緣膨石藻</p>
-                        <img src="time.png"class="time">
                         <img src="local.png"class="local">
                         <p class="Local">1~3公尺深的亞潮帶</p>
                         <p class="more" onclick="more(p_3)">了解更多</p>
@@ -115,7 +81,8 @@
         </ul>
     </div>
 
-    <h1 id="space"></h1>
+    <h1 id="space_1"></h1>
+
     <p id="p_1" class="jsp" style="display: none;">
         woruoqgnrekgbo'f<br>
         <button type="button" onclick="clo(p_1)" class="more">關閉</button>
@@ -128,18 +95,10 @@
         woruoqgnreokgfbo'fworuoqgnreokgfbo'fworuoqgnreokgfbo'fworuoqgnreokgfbo'fworuoqgnreokgfbo'fworuoqgnreokgfbo'fworuoqgnreokgfbo'fworuoqgnreokgfbo'fworuoqgnreokgfbo'f<br>
         <button type="button" onclick="clo(p_3)" class="more">關閉</button>
     </p>
-    <script>
-    function more(id){
-        id.style.display = "block";
-    }
-    </script>
-
-
-
-
+    <p id="space_2"></p>
     <div>
-        <h1 id="content">搶救藻礁</h1>
-        <p id="content_1">各種不同的活動內容<br>邀請您一同來共襄盛舉!</p>
+        <h1 class="content" id="i2">搶救藻礁</h1>
+        <p class="content_1">各種不同的活動內容<br>邀請您一同來共襄盛舉!</p>
     </div>
     <div id="picture">
         <ul>
