@@ -1,121 +1,176 @@
 <!DOCTYPE html>
-<html lang="zh-hant-TW">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>雲端應用服務從0到1</title>
-	<link href="class.css" rel="stylesheet">
-     
+	<title>index</title>
+	<link href="./css/Style.css" rel="stylesheet">
+    <script src="./js/index.js"></script>
+    <title>雲端應用服務從0到1</title>
+    <meta charset="utf-8">
+    <link href="./css/modal.css"  rel="stylesheet">
+    <script src="./js/jquery-3.6.0.slim.min.js"></script> 
+    <script src="./js/modal.js"></script>
 </head>
 <body>
-	<header>
-		<nav id="menu" class="menu">
-			<ul>
-				<li><a href="#sec1" data-adjust="100">認識藻礁</a></li>
-				<li><a href="#sec2" data-adjust="100">搶救藻礁</a></li>
-				<li><a href="#sec3" data-adjust="50">事件與呼籲</a></li>
-				<li><a href="https://web.cec.gov.tw/referendum/cms/proposal/33640">藻礁公投</a></li>
-			</ul>
-		</nav>	
+<div>
+    <div>
+        <span>
+            <img src="photo/view.png" id="view">
+            <h1 id="Taiwan" >雲端應用服務從0到1</h1>
+        </span>
+        <span>
+            <ul id="nav">
+                <li onclick="onTopClick(1)">認識藻礁</li>
+                <li onclick="onTopClick(2)">搶救藻礁</li>
+                <li onclick="onTopClick(3)">事件與呼籲</li>
+                <li onclick="onTopClick(4)">藻礁公投</li>
+            </ul>        
+        </span>
+    </div>
 
-	</header>
+    <div id="frontpapge">
+        <div id="word">
+            <h1>藻礁</h1>
+            <h2>
+                <div id="select">
+                    <select id="frontselect_1">
+                        <option>類別</option>
+                    </select>
+                    <select id="frontselect_2">
+                        <option>所有縣市</option>
+                    </select>
+                </div>
+                <img src="photo/search.png" id="search">
+            </h2>
+        </div>
+            <img src="photo/frontpapge.png" id="frontphoto">
+    </div>
 
-	<!-- <img src="http://algalreef.weebly.com/uploads/8/4/2/6/84265322/2015_orig.png" width="638" heigh="420"> -->
-    <div>   
-		<h1 id="FirstTitle">TAIWAN<br>Algae<br><br><br><br></h1>
-		<body background="http://algalreef.weebly.com/uploads/8/4/2/6/84265322/2015_orig.png""></body>
-	</div> 
-		<section id="sec1" class="container">
-			<h1>認識藻礁</h1>
-			<div class="content">
-				<h2>一、藻礁如何形成藻礁</h2>
-				<p>從字面上的含義，是由藻類形成的礁岩或石塊。簡單來說，和社會大眾較熟悉的珊瑚礁形成方式類似，藻礁是由生長在海洋或淡水湖泊的大型底棲藻類死亡後的鈣化藻體遺骸，經過長時間與週遭表層無脊椎動物粘結或膠合加上礦化作用，所形成富含碳酸鈣的生物礁體。然而，不是所有具鈣化藻體的大型底棲藻類都可以形成藻礁。目前發現的藻礁主要組成藻種，大都是由紅藻門的無節珊瑚藻（non-geniculate Coralline algae，例如臺灣的桃園藻礁，見下圖）或是綠藻門的仙掌藻（Halimeda spp.）死亡後的鈣化藻體（例如大堡礁或加勒比海的環礁部份組成）。</p>
-				<img src="https://i.imgur.com/V6A0LCu.png">
-				<ol class="OneContent">
-					<li>殼狀珊瑚藻在海洋沿岸生態系中扮演關鍵的角色，不僅是海洋中的初級生產者，亦為重要的造礁生物。另一方面，老化的藻體成為礁體結構的一部份，為許多海洋軟體動物及大型海藻著苗重要棲地。在珊瑚藻中，鈣化作用（calcification）常與光合作用一起發生。當海水中的鈣離子通過細胞膜時，會促使氫離子與重碳酸氫根離子結合（Ca2+ + 2HCO3- → CaCO3 + H2O + CO2），而形成碳酸鈣沉積物累積於細胞壁之間。同時，鈣化作用中釋出的二氧化碳則被使用於光合作用的固碳循環中。因此珊瑚藻的生長有降低海水酸化並維持健康海洋生態的功能，在海洋酸化的議題下受到廣泛的注目與研究。殼狀珊瑚藻在臺灣北部海岸常成為較佔優勢的鈣化生物，其層層向上生長的特性堆積成具多孔隙的礁體，經年累月後形成藻礁。殼狀珊瑚紅藻在海洋生態上亦具有保護棲地的重要功能，是因為活著的殼狀珊瑚紅藻在生長時會緊貼老化的鈣化藻體，可以保護已形成的藻礁體，免受海浪侵蝕，因此殼狀珊瑚藻的生長與維持海洋物種多樣性的重要生態功能息息相關。<br><br></li>
-					<img src="https://i.imgur.com/Z3Es4Z2.png">
-					<img src="https://i.imgur.com/QA4N4Cw.png">
-					<li>殼狀珊瑚藻的生殖方式 — 世代交替生活史<br>
-						殼狀珊瑚藻的藻種特性為具有鈣化藻體與紅藻特有的三相生活史以及所有生殖結構皆有特化的囊狀結構（conceptacles）保護。三相生活史可分為行無性生殖的四分孢子體世代（二倍體）、有性生殖的配子體世代（單倍體）以及寄生在配子體世代上的果孢子體世代（二倍體）。一般而言，不論是透過無性生殖產生的四分孢子或有性生殖產生的雌雄配子皆在藻體表面的生殖囊腔中發育。在有性生殖的配子體世代是雌雄異體，雄配子體囊腔中的雄配子在發育成熟後由生殖腔上方的囊孔釋放出來，游離的雄配子進入成熟雌配子體的生殖囊腔中與雌配子結合，並在雌配子體生殖囊腔內發育成寄生性的果孢子體世代（二倍體）。果孢子體在成熟後，透過雌配子體生殖囊腔上方的囊孔的釋放出果孢子，而果孢子如成功在已形成的藻礁上萌發，則可生長發育為四分孢子體世代。成熟的四分孢子體表面的生殖囊腔中有多個帶狀分裂的四方孢子囊，成熟的四分孢子囊由生殖囊腔上方的囊孔釋放出四個四分孢子，離開囊腔的四分孢子若可順利著生在舊的藻礁上，則可生長發育為下個新世代的雌性或雄性配子體，完成三相世代交替生活史，即為四分孢子體、配子體以及寄生在雌配子體上的果孢子體交替出現的世代交替生活史。<br><br></li>
-					<img src="https://i.imgur.com/9u9WnEy.png">
-					<li>桃園海域藻礁生態系<br>
-						桃園自然海岸線全長約為 21公里（來源：中華民國內政部營建署統計107 年度第 2 期各縣市自然及人工海岸線比例一覽表），而桃園海岸的藻礁主要分布北起大園鄉竹圍漁港海岸，向南延伸至觀音鄉及新屋鄉永安漁港附近。根據臺灣大學戴昌鳳教授研究團隊利用碳十四定年的資料顯示，桃園地海岸線最古老的藻礁約有 7600 年之久，分散在桃園海岸線南北側的藻礁下層（3-5米深）。另一方面，現生藻礁主要分佈在三個藻礁海域：由南到北分別為觀新藻礁、大潭藻礁以及白玉藻礁，其中觀新藻礁（＝礁灰岩）面積為最大。目前桃園藻礁生態系的現生藻礁，主要是具鈣化能力的殼狀珊瑚紅藻組成。桃園藻礁海域擁有全臺灣最高殼狀珊瑚藻覆蓋率的活體藻礁。<br>殼狀珊瑚紅藻，因為生長較緩慢，每一年可留下的碳酸鈣遺骸只有數毫米厚。桃園藻礁是經過了好幾千年的生長，才有現在的大片藻礁規模。殼狀珊瑚藻在分類上歸屬於海洋性紅藻，雖然具有行光合作用的能力，但在生長時仍舊需要適當的水溫、光照及營養鹽。然而，桃園藻礁生態系的殼狀珊瑚藻因生長速度十分緩慢（每年增加藻體厚度大約只有1-2 mm 或更低），更容易受到環境變動影響生長（如泥沙覆蓋或其它生長快速大型海藻棲地競爭，水溫過高等等）。</li>
-				</ol>
-				<p>二、桃園藻礁主要造礁藻種介紹
-					桃園藻礁是屬於生物礁的一環，主要是以具碳酸鈣的海洋動物（石珊瑚）和海洋紅藻的無節珊瑚藻（俗稱殼狀珊瑚藻）和其它海洋生物經過數百年至數千年的堆積及礦化膠結而成的礁灰岩［見下圖，參考戴等人（2009）有關桃園觀音藻礁生態解說］。桃園藻礁海域的造礁藻類主要是由海洋性紅藻門的珊瑚藻亞綱的無節珊瑚藻(俗稱殼狀珊瑚藻)所組成。目前在桃園三個主要藻礁海域（觀新藻礁、大潭藻礁、白玉藻礁）發現有至少二十種以上的造礁藻種/殼狀珊瑚藻（108-109年海保署藻礁生態系調查計畫）。桃園藻礁主要由四個無節珊瑚藻屬的造礁藻種組成，包括殼葉藻屬（Crustaphytum L.-C.Liu & S.-M.Lin）、哈維石藻屬（Harveylithon A.Rösler, Perfectti, V.Peña & J.C.Braga）、膨石藻屬（Phymatolithon Foslie）、孢石藻屬（Sporolithon Heydrich）為較常見的優勢藻種。</p>
-				<img src="https://i.imgur.com/SUFNJyJ.png">
-				<ul class="OneContent">
-					<li>太平洋殼葉藻
-						拉丁學名：Crustaphytum pacificum L.-C.Liu & S.-M.Lin in Liu et al. (2018)
-						模式種產地：桃園新屋藻礁
-						棲地：桃園藻礁區低潮位的礁岩或鵝卵石上，亦可在2-3公尺深的亞潮帶區域發現。
-						分布：目前僅於西太平洋的臺灣西北部及法屬新喀里多尼亞島
-						形態特徵:
-						藻體由薄殼狀的鈣化小葉片組成, 小葉片可為不規則碎片狀或由具波浪邊緣的橢圓形葉片，葉片長約4~10公分，寬約3~5公分。鈣化藻體表面呈現深紫色或深紅色，藻體背面由 5-10 層或以上的皮層細胞（含有行光合作用色素）組成，藻體腹面（向地面）緊貼著礁岩基質或其他鈣化生物生長。因此在野外觀察殼葉藻的藻體，可看到的鈣化小葉片邊緣呈波浪狀，葉片邊緣不緊貼於礁岩上，藻體表面呈現出碎浪波紋狀。鈣化藻體厚度約100~300 μm，約35~45層細胞厚。鈣化葉片縱切面可觀察到葉片下層的髓質細胞由葉片內部向外呈放射狀生長。四分孢子體世代具有多孔的四分孢子囊腔，具平頂狀的四分孢子囊腔會凸出藻體表面，囊腔內有多個帶狀分裂的四分孢子囊（目字形）。</li>
-					<img src="https://i.imgur.com/g8mq5h4.png">
-					<li>玫瑰哈維石藻
-						學名：Harveylithon rosea L.-C.Liu & S.-M.Lin in Liu et al. (2018)
-						模式種產地:桃園新屋藻礁。
-						棲地：較常出現在藻礁區的礁岩或鵝卵石上，亦可在1~2公尺深的亞潮帶藻礁區域發現。
-						分布：目前僅記錄於臺灣北部，由桃園市、新北市至基隆市沿岸。
-						形態特徵:
-						無節的鈣化藻體，外觀近圓形或橢圓形殼狀，長約2~5公分，寬約3~4公分，藻體邊緣常呈淺裂狀或略有波浪弧狀。藻體背腹分明。藻體背面為照光面藻體，背面由 15-30 層或以上的皮層細胞（含有行光合作用色素）組成，背面的皮層細胞中含有可行光合作用的色素蛋白，使藻體表面呈現粉紅色或玫瑰色。腹面為背光面，腹面藻體緊貼著基質(礁岩或其他鈣化生物)生長。藻體厚度約300~500μm，約25~50層細胞厚。藻體縱切面可觀察到髓質明顯鈣化，而葉片縱切面可觀察到葉片下層的髓質細胞由葉片內部向上呈半放射狀生長。四分孢子體世代具有單孔的四分孢子囊腔，囊腔不凸出或微微凸出於藻體表面。囊腔內有多個帶狀分裂的四分孢子囊。</li>
-					<img src="https://i.imgur.com/7UDQwTd.png">
-					<li>波緣膨石藻
-						學名：Phymatolithon margoundulatus L.-C.Liu & Showe M.Lin
-						模式種產地：桃園新屋藻礁。
-						棲地：較常出現在藻礁區的礁岩或鵝卵石上，廣泛分佈於高潮位藻礁區，亦可由高潮位至1~3公尺深的亞潮帶藻礁區域發現。
-						分布：目前僅記錄於臺灣桃園市藻礁區。</li>
-					<img src="https://i.imgur.com/2gmbp83.png">
-					<p>無節的鈣化藻體，外觀近扇形平面藻體或扁平不連續狀的玫瑰花座形，長約2~4公分，寬約2~3公分，藻體邊緣常呈淺裂狀或略有波浪弧狀。藻體背腹分明。藻體背面為照光面，藻體背面由 10-15層或以上的皮層細胞（含有行光合作用色素）組成，背面的皮層細胞中含有可行光合作用的色素蛋白，使藻體表面呈現紫紅色到深紅色，藻體邊緣多為白色或淺粉色。腹面為背光面，腹面藻體緊貼著基質(礁岩或其他鈣化生物)生長。藻體厚度約100~250μm，約35~45層細胞厚。藻體縱切面可觀察到髓質明顯有鈣化，而葉片縱切面可觀察到葉片下層的髓質細胞由葉片內部向上呈半放射狀生長。四分孢子體世代具有多孔的四分孢子囊腔，囊腔以半球狀凸出於藻體表面。囊腔內有多個帶狀分裂的四分孢子囊。</p>
-					<li>參、柴山多杯孔珊瑚介紹
-						柴山多杯孔珊瑚在分類上屬於刺絲胞動物門 (Cnidaria)、珊瑚綱 (Anthozoa)、六放珊瑚亞綱 (Hexa- corallia)、石珊瑚目(Scleractinia)、葵珊瑚科(Caryo- phylliidae) 的成員。最初是在 2012年由當時就讀臺灣大學海洋所碩士班學生林梅芳（陳昭倫博士指導）發表。桃園藻礁生態系柴山多杯孔珊瑚 (Polycyathus chaishanensis Lin, Kitahara, Tachikawa, Keshavmurthy & Chen 2012)由中央研究院的陳昭倫博士研究團體在2017年証實存在桃園大潭藻礁海域。在2019-2020，海洋大學林綉美研究團隊在大潭藻礁已陸續紀錄有100株以上的活群體（見下圖）。由於這個種類很少被紀錄，研究文獻甚少，對其在生物學、生態角色的扮演上目前認識不多。在臺灣目前僅在高雄柴山與桃園觀音沿岸藻礁區有紀錄過其分佈。本種珊瑚亦為野生動物保育法公告的(第I級)瀕臨絕種保育類野生動物。</li>
-					<img src="https://i.imgur.com/YpOjiE0.png">
-				</ul>
-			</div>
+    <div>
+        <h1 class="content" id="i1">認識藻礁</h1>
+        <p class="content_1">台灣的各個美景，都美不勝收。<br>等你一同來發現這座寶島的奧妙！</p>
+    </div>
+    <div id="picture">
+        <ul>
+            <li>
+                <div class="hot">
+                    <img src="https://i.imgur.com/7UDQwTd.png" class="hot">
+                    <span class="icon">
+                        <p class="top">玫瑰哈維石藻</p>
+                        <img src="photo/local.png"class="local">
+                        <p class="Local">1~2公尺深的亞潮帶</p>
+                        <p class="more" onclick="more(p_1)">了解更多</p>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div class="hot">
+                    <img src="https://i.imgur.com/g8mq5h4.png" class="hot">
+                    <span class="icon">
+                        <p class="top">太平洋殼葉藻</p>
+                        <img src="photo/local.png"class="local">
+                        <p class="Local">2-3公尺深的亞潮帶</p>
+                        <p class="more" onclick="more(p_2)">了解更多</p>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div class="hot">
+                    <img src="https://i.imgur.com/2gmbp83.png" class="hot">
+                    <span class="icon">
+                        <p class="top">波緣膨石藻</p>
+                        <img src="photo/local.png"class="local">
+                        <p class="Local">1~3公尺深的亞潮帶</p>
+                        <p class="more" onclick="more(p_3)">了解更多</p>
+                    </span>
+                </div>
+            </li>
+        </ul>
+    </div>
 
-		</section>
-		<section id="sec2" class="container">
-			<h1>搶救藻礁</h1>
-			<div class="content">
-				<h2 class="fade_in">壹、​</h2>
-				<p>
-					搶救大潭藻礁
+    <h1 id="space_1"></h1>
 
-					為什麼要搶救大潭藻礁​？<br>
-					​珊瑚礁、藻礁都是生物礁；但藻礁珍奇稀有<br>
-					桃園藻礁是全球最獨特的大型淺海現生藻礁地景及生態系<br>
-					地質特殊、生態豐富、生物多樣性高，有世界自然遺產價值<br>
-					它的固碳功能可以減緩地球暖化的氣候危機<br>
-					大潭藻礁是精華中的精華  造礁的殼狀珊瑚藻種類最多覆蓋率最高<br>
-					24種造礁藻類有19種是世界新種，簡直不可思議<br>
-					汙染多年後，此處海岸蟹類豐富度仍遠高於墾丁國公園潮間帶<br>
-					頂級掠食性動物裸胸鯙超過1200隻，證明生態豐富穩定<br>
-					是一級保育類動物柴山多杯孔珊瑚最大棲地<br>
-					是國際瀕危物種紅肉ㄚ髻鮫的育幼場<br>
-					全球僅剩約50隻的台灣白海豚也來這裡覓食<br>
-					國際期刊一再認證這裡的保育價值<br>
-					2019年列入國際海洋保育組織Mission Blue的全球希望熱點<br>
-					是值得我們為下一代守護的珍貴自然資產和環境教育場域<br>
-					保育機關不保育​​<br>
-					文化資產保存法（自然地景篇的自然保留區、自然紀念物）、野生動物保育法（野生動物保護區）、海岸管理法（一級海岸保護區）都是藻礁保育的法源基礎<br>
-					不幸地方和中央保育機關都相互推遲劃設保護區<br>
-					他們的怠惰導致桃園藻礁被開發毀滅的命運<br>
-					保育機關屈從主官意志只好閹割專業<br>
-					踢皮球的荒誕過程令人浩歎<br>
-				</p>
-			</div>
-          </section>
+    <p id="p_1" class="jsp" style="display: none;">
+        學名：Harveylithon rosea L.-C.Liu & S.-M.Lin in Liu et al. (2018)<br>
+        模式種產地:桃園新屋藻礁。<br>
+        棲地：較常出現在藻礁區的礁岩或鵝卵石上，亦可在1~2公尺深的亞潮帶藻礁區域發現。<br>
+        分布：目前僅記錄於臺灣北部，由桃園市、新北市至基隆市沿岸。<br>
+        形態特徵：<br>
+        無節的鈣化藻體，外觀近圓形或橢圓形殼狀，長約2~5公分，寬約3~4公分，藻體邊緣常呈淺裂狀或略有波浪弧狀。藻體背腹分明。藻體背面為照光面藻體，背面由 15-30 層或以上的皮層細胞（含有行光合作用色素）組成，背面的皮層細胞中含有可行光合作用的色素蛋白，使藻體表面呈現粉紅色或玫瑰色。腹面為背光面，腹面藻體緊貼著基質(礁岩或其他鈣化生物)生長。藻體厚度約300~500μm，約25~50層細胞厚。藻體縱切面可觀察到髓質明顯鈣化，而葉片縱切面可觀察到葉片下層的髓質細胞由葉片內部向上呈半放射狀生長。四分孢子體世代具有單孔的四分孢子囊腔，囊腔不凸出或微微凸出於藻體表面。囊腔內有多個帶狀分裂的四分孢子囊。<br>
+        <button type="button" onclick="clo(p_1)" class="more">關閉</button>
+    </p>
+    <p id="p_2" class="jsp" style="display: none;">
+        拉丁學名：Crustaphytum pacificum L.-C.Liu & S.-M.Lin in Liu et al. (2018)<br>
+        模式種產地：桃園新屋藻礁<br>
+        棲地：桃園藻礁區低潮位的礁岩或鵝卵石上，亦可在2-3公尺深的亞潮帶區域發現。<br>
+        分布：目前僅於西太平洋的臺灣西北部及法屬新喀里多尼亞島。<br>
+        形態特徵:<br>
+        藻體由薄殼狀的鈣化小葉片組成, 小葉片可為不規則碎片狀或由具波浪邊緣的橢圓形葉片，葉片長約4~10公分，寬約3~5公分。鈣化藻體表面呈現深紫色或深紅色，藻體背面由 5-10 層或以上的皮層細胞（含有行光合作用色素）組成，藻體腹面（向地面）緊貼著礁岩基質或其他鈣化生物生長。因此在野外觀察殼葉藻的藻體，可看到的鈣化小葉片邊緣呈波浪狀，葉片邊緣不緊貼於礁岩上，藻體表面呈現出碎浪波紋狀。鈣化藻體厚度約100~300 μm，約35~45層細胞厚。鈣化葉片縱切面可觀察到葉片下層的髓質細胞由葉片內部向外呈放射狀生長。四分孢子體世代具有多孔的四分孢子囊腔，具平頂狀的四分孢子囊腔會凸出藻體表面，囊腔內有多個帶狀分裂的四分孢子囊（目字形）。<br>
+        <button type="button" onclick="clo(p_2)" class="more">關閉</button>
+    </p>
+    <p id="p_3" class="jsp" style="display: none;">
+        學名：Phymatolithon margoundulatus L.-C.Liu & Showe M.Lin<br>
+        模式種產地：桃園新屋藻礁。<br>
+        棲地：較常出現在藻礁區的礁岩或鵝卵石上，廣泛分佈於高潮位藻礁區，亦可由高潮位至1~3公尺深的亞潮帶藻礁區域發現。<br>
+        分布：目前僅記錄於臺灣桃園市藻礁區。<br>
+        形態特徵:<br>
+        無節的鈣化藻體，外觀近扇形平面藻體或扁平不連續狀的玫瑰花座形，長約2~4公分，寬約2~3公分，藻體邊緣常呈淺裂狀或略有波浪弧狀。藻體背腹分明。藻體背面為照光面，藻體背面由 10-15層或以上的皮層細胞（含有行光合作用色素）組成，背面的皮層細胞中含有可行光合作用的色素蛋白，使藻體表面呈現紫紅色到深紅色，藻體邊緣多為白色或淺粉色。腹面為背光面，腹面藻體緊貼著基質(礁岩或其他鈣化生物)生長。藻體厚度約100~250μm，約35~45層細胞厚。藻體縱切面可觀察到髓質明顯有鈣化，而葉片縱切面可觀察到葉片下層的髓質細胞由葉片內部向上呈半放射狀生長。四分孢子體世代具有多孔的四分孢子囊腔，囊腔以半球狀凸出於藻體表面。囊腔內有多個帶狀分裂的四分孢子囊。<br>
+        <button type="button" onclick="clo(p_3)" class="more">關閉</button>
+    </p>
+    <p id="space_2"></p>
+    <div>
+        <h1 class="content" id="i2">搶救藻礁</h1>
+        <p class="content_1">各種不同的活動內容<br>邀請您一同來共襄盛舉!</p>
+    </div>
+    <div id="picture">
+        <ul>
+            <li>
+                <div class="hot">
+                    <img src="photo/cat.1.jpg" class="hot">
+                    <P class="activ">可愛貓咪</P>
+                </div>
+            </li>
+            <li>
+                <div class="hot">
+                    <img src="photo/cat.1.jpg" class="hot">
+                    <P class="activ">很可愛貓咪</P>
+                </div>
+            </li>
+            <li>
+                <div class="hot">
+                    <img src="photo/cat.1.jpg" class="hot">
+                    <P class="activ">超可愛貓咪</P>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <img src="photo/sun.png" id="sun">  
+    <div id="last"></div>
+    <footer id="footer">
+        CopyRight: TravelTaiwan Desigh By: Tracy
+    </footer>
+</div>
 
-		<section id="sec3">
-			<h1>事件與呼籲</h1>
-               <div>
-                    <h2 class="fade_in">content<br><br><br><br><br><br><br><br><br><br></h2>
-               </div>
-		<footer>
-			<p>create by cloud application team 6</p>
-
-		</footer>
-
+<div class="modal fade" tabindex="-1" role="dialog" id="vote_modal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">藻礁公投</h4>
+        </div>
+        <div class="modal-body">
+          <p class="text-center">距離公投還有 <span id="date"></span></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+          <a href="https://web.cec.gov.tw/referendum/cms/proposal/33640"
+            ><button type="button" class="btn btn-primary">詳細資料</button></a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
+
+
+
+
