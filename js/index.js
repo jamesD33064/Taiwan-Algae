@@ -15,7 +15,6 @@ function onTopClick(flag) {
     const voteDate = 1639756800000;
     const days = parseInt((voteDate - currentDate) / 86400000);
     const hours = parseInt((voteDate - currentDate) / 3600000 - days * 24);
-
     dateText.textContent = `${days}天${hours}小時`;
   }
 }

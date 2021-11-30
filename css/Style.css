@@ -187,6 +187,26 @@
     background-color: #08A6BB;
     text-align: center;
 }
+
+.button {
+    transition-duration: 0.4s;
+    padding: 2px 16px;
+    border-radius: 12px;
+    color: #08A6BB;
+    text-align: center;
+    font-weight: bold;
+    border: #08A6BB solid 0.3vw;
+    font-size: 1.25vw;
+}
+  
+.button:hover {
+    padding: 2px 16px;
+    border-radius: 12px;
+    
+    background:#eee;
+    color:#08A6BB;
+}
+
 html {
     scroll-behavior: smooth;
   }
