@@ -27,13 +27,14 @@ function onTopClick(flag) {
         });
     }
     else if(flag==4){
-        const i3 = document.querySelector("#i4");
-        const height = i3.getBoundingClientRect().top + window.scrollY;
-        window.scrollBy({
-            left: 0,
-            top: height,
-            behavior: 'smooth',
-        });
+        $("#vote_modal").modal("show");
+        const dateText = document.querySelector("#date");
+        const currentDate = new Date();
+        const voteDate = 1639756800000;
+        const days = parseInt((voteDate - currentDate) / 86400000);
+        const hours = parseInt((voteDate - currentDate) / 3600000 - days * 24);
+
+    dateText.textContent = `${days}天${hours}小時`;
     }
 }
 function clo(id) {
