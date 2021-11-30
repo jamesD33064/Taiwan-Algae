@@ -1,8 +1,14 @@
-#nav{
-    float: right;
-    transform: translate(1vw,0.8vw);
+#nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline;
+    white-space: nowrap;
+    margin-top: 1%;
+    margin-left:28vw;
 }
-#nav > p{
+#nav > li{
     display: inline;
     margin-right: 3vw;
     font-size: 1.45vw;
@@ -22,10 +28,11 @@
     font-size: 2vw;
     color: #08A6BB;
 }
-#nav p:hover {
+#nav li:hover {
     background:#eee;
     color: #08A6BB;
 }
+
 #frontpapge{
     display: flex;
     justify-content: center; 
@@ -172,11 +179,6 @@
 }
 .jsp{
     text-align: center;
-}
-#topbut{
-    position: fixed;
-    right: 0;
-    bottom: 0;
 }
 #footer{
     position: relative;
