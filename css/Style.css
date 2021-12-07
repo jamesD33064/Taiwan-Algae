@@ -182,6 +182,10 @@
     margin-left: 8vw;
     margin-right: 8vw;
 }
+.float-right{
+    font-size: 1.25vw;
+    color:#08A6BB;
+}
 .button {
     transition-duration: 0.4s;
     padding: 2px 16px;
