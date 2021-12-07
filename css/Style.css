@@ -179,6 +179,8 @@
 }
 .jsp{
     text-align: center;
+    margin-left: 8vw;
+    margin-right: 8vw;
 }
 .button {
     transition-duration: 0.4s;
