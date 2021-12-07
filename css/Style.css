@@ -186,6 +186,10 @@
     font-size: 1.25vw;
     color:#08A6BB;
 }
+.float-right_1{
+    font-size: 1vw;
+    color:black;
+}
 .button {
     transition-duration: 0.4s;
     padding: 2px 16px;
