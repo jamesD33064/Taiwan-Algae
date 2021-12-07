@@ -26,15 +26,16 @@ function onTopClick(flag) {
             behavior: 'smooth',
         });
     }
-    else if(flag==4){$("#vote_modal").modal("show");
-    const dateText = document.querySelector("#date");
-    const currentDate = new Date();
-    const voteDate = 1639756800000;
-    const days = parseInt((voteDate - currentDate) / 86400000);
-    const hours = parseInt((voteDate - currentDate) / 3600000 - days * 24);
+    else if(flag==4){
+        $("#vote_modal").modal("show");
+        const dateText = document.querySelector("#date");
+        const currentDate = new Date();
+        const voteDate = 1639756800000;
+        const days = parseInt((voteDate - currentDate) / 86400000);
+        const hours = parseInt((voteDate - currentDate) / 3600000 - days * 24);
 
-    dateText.textContent = `${days}天${hours}小時`;
-  }
+        dateText.textContent = `${days}天${hours}小時`;
+    }
 }
 function clo(id) {
     id.style.display = "none";
