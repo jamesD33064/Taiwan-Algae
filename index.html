@@ -30,7 +30,7 @@
 
     <div id="frontpapge">
         <div id="word">
-            <h1>藻礁</h1>
+            <h1 style="text-align: center;">Taiwan Algae</h1>
             <h2>
                 <div id="select">
                     <select id="frontselect_1">
@@ -38,10 +38,33 @@
                     </select>
                     <select id="frontselect_2">
                         <option>所有縣市</option>
+                        <option value="N">北部投票率</option>
+                        <option value="N">北部投票率</option>
+                        <option value="N">北部投票率</option>
                     </select>
                 </div>
-                <img src="photo/search.png" id="search">
+                <script src="./js/vote.js"></script>
+                <button id="sure" onclick="sure_click()">確定</button>
             </h2>
+            <!-- <div>
+                <span>
+                    <h3 style="text-align: center; color:white;">北部投票率</h3>
+                    <progress id="N" value="32" max="100"></progress>
+                    <div class="g-progress"></div>
+                </span>
+                <span>
+                    <progress id="N" value="32" max="100"></progress>
+                    <div class="g-progress"></div>
+                </span>
+                <span>
+                    <progress id="N" value="32" max="100"></progress>
+                    <div class="g-progress"></div>
+                </span>
+                <span>
+                    <progress id="N" value="32" max="100"></progress>
+                    <div class="g-progress"></div>
+                </span>
+            </div> -->
         </div>
             <img src="photo/frontpapge.png" id="frontphoto">
     </div>
@@ -148,28 +171,14 @@
     </div>
     <h1 id="space_1"></h1>
     <p id="p_4" class="jsp" style="display: none;">
-            珊瑚礁、藻礁都是生物礁；但藻礁珍奇稀有
-            桃園藻礁是全球最獨特的大型淺海現生藻礁地景及生態系
-            地質特殊、生態豐富、生物多樣性高，有世界自然遺產價值
-            它的固碳功能可以減緩地球暖化的氣候危機
-            大潭藻礁是精華中的精華  造礁的殼狀珊瑚藻種類最多覆蓋率最高
-            24種造礁藻類有19種是世界新種，簡直不可思議
-            汙染多年後，此處海岸蟹類豐富度仍遠高於墾丁國公園潮間帶
-            頂級掠食性動物裸胸鯙超過1200隻，證明生態豐富穩定
-            是一級保育類動物柴山多杯孔珊瑚最大棲地
-            是國際瀕危物種紅肉ㄚ髻鮫的育幼場
-            全球僅剩約50隻的台灣白海豚也來這裡覓食
-            國際期刊一再認證這裡的保育價值
-            2019年列入國際海洋保育組織Mission Blue的全球希望熱點
-            是值得我們為下一代守護的珍貴自然資產和環境教育場域<br>
+        珊瑚礁、藻礁都是生物礁；但藻礁珍奇稀有，桃園藻礁是全球最獨特的大型淺海現生藻礁地景及生態系，地質特殊、生態豐富、生物多樣性高，有世界自然遺產價值，它的固碳功能可以減緩地球暖化的氣候危機。
+        大潭藻礁是精華中的精華  造礁的殼狀珊瑚藻種類最多覆蓋率最高24種造礁藻類有19種是世界新種，簡直不可思議，汙染多年後，此處海岸蟹類豐富度仍遠高於墾丁國公園潮間帶，頂級掠食性動物裸胸鯙超過1200隻，證明生態豐富穩定，是一級保育類動物柴山多杯孔珊瑚最大棲地是國際瀕危物種紅肉ㄚ髻鮫的育幼場，全球僅剩約50隻的台灣白海豚也來這裡覓食，國際期刊一再認證這裡的保育價值。
+        2019年列入國際海洋保育組織Mission Blue的全球希望熱點，是值得我們為下一代守護的珍貴自然資產和環境教育場域。<br>
         <button type="button" onclick="clo(p_4)" class="more button">關閉</button>
     </p>
     <p id="p_5" class="jsp" style="display: none;">
         文化資產保存法（自然地景篇的自然保留區、自然紀念物）、野生動物保育法（野生動物保護區）、海岸管理法（一級海岸保護區）都是藻礁保育的法源基礎
-        不幸地方和中央保育機關都相互推遲劃設保護區
-        他們的怠惰導致桃園藻礁被開發毀滅的命運
-        保育機關屈從主官意志只好閹割專業
-        踢皮球的荒誕過程令人浩歎
+        不幸地方和中央保育機關都相互推遲劃設保護區，他們的怠惰導致桃園藻礁被開發毀滅的命運，保育機關屈從主官意志只好閹割專業，踢皮球的荒誕過程令人浩歎。
         <br><button type="button" onclick="clo(p_5)" class="more button">關閉</button>
     </p>
 
