@@ -33,14 +33,15 @@
             <h1 style="text-align: center;">Taiwan Algae</h1>
             <h2>
                 <div id="select">
-                    <select id="frontselect_1">
-                        <option>類別</option>
+                    <select id="frontselect_1" onchange="change()">
+                        <option>區域</option>
+                        <option value="0%">北部投票率</option>
+                        <option value="0%">中部投票率</option>
+                        <option value="0%">南部投票率</option>
+                        <option value="0%">東部投票率</option>
                     </select>
                     <select id="frontselect_2">
                         <option>所有縣市</option>
-                        <option value="N">北部投票率</option>
-                        <option value="N">北部投票率</option>
-                        <option value="N">北部投票率</option>
                     </select>
                 </div>
                 <script src="./js/vote.js"></script>
@@ -311,3 +312,5 @@
   </div>
 </body>
 </html>
+
+<!-- https://referendums.2021.nat.gov.tw/?themeId=79b8adc5242fb9232566f29a3114eddd&voteType=REF&caseType=N&dataLevel=N -->
