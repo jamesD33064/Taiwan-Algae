@@ -7,6 +7,7 @@
     <title>雲端應用服務從0到1</title>
     <meta charset="utf-8">
     <link href="./css/modal.css"  rel="stylesheet">
+    <link href="./css/timeline.css"  rel="stylesheet">
     <script src="./js/jquery-3.6.0.slim.min.js"></script> 
     <script src="./js/modal.js"></script>
 </head>
@@ -29,25 +30,40 @@
 
     <div id="frontpapge">
         <div id="word">
-            <h1>藻礁</h1>
+            <h1 style="text-align: center;">Taiwan Algae</h1>
             <h2>
                 <div id="select">
-                    <select id="frontselect_1">
-                        <option>類別</option>
+                    <select id="frontselect_1" onchange="change()">
+                        <option>區域</option>
+                        <option value="0%">北部投票率</option>
+                        <option value="0%">中部投票率</option>
+                        <option value="0%">南部投票率</option>
+                        <option value="0%">東部投票率</option>
+                        <option value="0%">離島投票率</option>
                     </select>
                     <select id="frontselect_2">
                         <option>所有縣市</option>
                     </select>
                 </div>
-                <img src="photo/search.png" id="search">
+                <script src="./js/vote.js"></script>
+                <button id="sure" onclick="sure_click()">確定</button>
             </h2>
+            <!-- <div>
+                <span>
+                    <h3 style="text-align: center; color:white;">北部投票率</h3>
+                    <progress id="N" value="32" max="100"></progress>
+                    <div class="g-progress"></div>
+                </span>
+            </div> -->
         </div>
             <img src="photo/frontpapge.png" id="frontphoto">
     </div>
 
     <div>
         <h1 class="content" id="i1">認識藻礁</h1>
-        <p class="content_1">台灣的各個美景，都美不勝收。<br>等你一同來發現這座寶島的奧妙！</p>
+        <p class="content_1">藻礁跟珊瑚一樣嗎？<br>
+            藻礁是植物還是動物？<br>
+            讓我們一同來認識藻礁吧！</p>
     </div>
     <div id="picture">
         <ul>
@@ -145,35 +161,114 @@
     </div>
     <h1 id="space_1"></h1>
     <p id="p_4" class="jsp" style="display: none;">
-            珊瑚礁、藻礁都是生物礁；但藻礁珍奇稀有
-            桃園藻礁是全球最獨特的大型淺海現生藻礁地景及生態系
-            地質特殊、生態豐富、生物多樣性高，有世界自然遺產價值
-            它的固碳功能可以減緩地球暖化的氣候危機
-            大潭藻礁是精華中的精華  造礁的殼狀珊瑚藻種類最多覆蓋率最高
-            24種造礁藻類有19種是世界新種，簡直不可思議
-            汙染多年後，此處海岸蟹類豐富度仍遠高於墾丁國公園潮間帶
-            頂級掠食性動物裸胸鯙超過1200隻，證明生態豐富穩定
-            是一級保育類動物柴山多杯孔珊瑚最大棲地
-            是國際瀕危物種紅肉ㄚ髻鮫的育幼場
-            全球僅剩約50隻的台灣白海豚也來這裡覓食
-            國際期刊一再認證這裡的保育價值
-            2019年列入國際海洋保育組織Mission Blue的全球希望熱點
-            是值得我們為下一代守護的珍貴自然資產和環境教育場域<br>
+        珊瑚礁、藻礁都是生物礁；但藻礁珍奇稀有，桃園藻礁是全球最獨特的大型淺海現生藻礁地景及生態系，地質特殊、生態豐富、生物多樣性高，有世界自然遺產價值，它的固碳功能可以減緩地球暖化的氣候危機。
+        大潭藻礁是精華中的精華  造礁的殼狀珊瑚藻種類最多覆蓋率最高24種造礁藻類有19種是世界新種，簡直不可思議，汙染多年後，此處海岸蟹類豐富度仍遠高於墾丁國公園潮間帶，頂級掠食性動物裸胸鯙超過1200隻，證明生態豐富穩定，是一級保育類動物柴山多杯孔珊瑚最大棲地是國際瀕危物種紅肉ㄚ髻鮫的育幼場，全球僅剩約50隻的台灣白海豚也來這裡覓食，國際期刊一再認證這裡的保育價值。
+        2019年列入國際海洋保育組織Mission Blue的全球希望熱點，是值得我們為下一代守護的珍貴自然資產和環境教育場域。<br>
         <button type="button" onclick="clo(p_4)" class="more button">關閉</button>
     </p>
     <p id="p_5" class="jsp" style="display: none;">
         文化資產保存法（自然地景篇的自然保留區、自然紀念物）、野生動物保育法（野生動物保護區）、海岸管理法（一級海岸保護區）都是藻礁保育的法源基礎
-        不幸地方和中央保育機關都相互推遲劃設保護區
-        他們的怠惰導致桃園藻礁被開發毀滅的命運
-        保育機關屈從主官意志只好閹割專業
-        踢皮球的荒誕過程令人浩歎
+        不幸地方和中央保育機關都相互推遲劃設保護區，他們的怠惰導致桃園藻礁被開發毀滅的命運，保育機關屈從主官意志只好閹割專業，踢皮球的荒誕過程令人浩歎。
         <br><button type="button" onclick="clo(p_5)" class="more button">關閉</button>
     </p>
 
     <p id="space_2"></p>
     <div>
         <h1 class="content" id="i3">事件與呼籲</h1>
-        <p class="content_1">各種不同的活動內容<br>邀請您一同來共襄盛舉!</p>
+        <p class="content_1">環境受害者的矛盾情結，與公民參與的匱乏。</p>
+        <p id="space_1"></p>
+        <div class="row">
+            <ul class="timeline">
+                <li>
+                    <p class="float-right">1998年</p>
+                    <p class="float-right_1">戴昌鳳、柯金源發現大潭海岸礁體為藻類造礁，其後並從空拍見證當地礁體是全國最壯麗的藻礁群。</p>
+                </li>
+                <li>
+                    <p class="float-right">2007年5月9日</p>
+                    <p class="float-right_1">劉靜榆博士發現觀新藻礁乃全台當時所見最大藻礁群，被中油埋輸氣管開膛剖肚。</p>
+                </li>
+                <li>
+                    <p class="float-right">2008年5月9日 </p>
+                    <p class="float-right_1">以蠻野心足生態協會為首的8大團體行文要求劃設自然保留區。</p>
+                </li>
+                <li>
+                    <p class="float-right">2008年9月11日</p>
+                    <p class="float-right_1">經農委會及桃園縣政府現勘審議通過予以保護共識，並依第2款列冊追蹤。</p>
+                </li>
+                <li>
+                    <p class="float-right">2009年3月26日</p>
+                    <p class="float-right_1">林務局新竹處竹育字第0982240579 號函通知核定補助桃園縣政府150萬進行藻礁保育研究。</p>
+                </li>
+                <li>
+                    <p class="float-right">2010年1月15日</p>
+                    <p class="float-right_1">桃園縣政府99 年1 月15 日府農林字第0990019987 號函通知本林務局退還藻礁研究經費。</p>
+                </li>
+                <li>
+                    <p class="float-right">2011年9月24日</p>
+                    <p class="float-right_1">觀音不要煉油廠自救會反對吳志揚主導的「桃園煉油廠遷廠觀塘工業區」，並注意到桃園藻礁議題。</p>
+                </li>
+                <li>
+                    <p class="float-right">2011年12月09日</p>
+                    <p class="float-right_1">中研院學者陳昭倫呼籲：桃園藻礁所形成的獨特地景，恐怕只有澳洲才有，政府應將劃設為地景公園。</p>
+                </li>
+                <li>
+                    <p class="float-right">2013年4月20日</p>
+                    <p class="float-right_1">蔡英文拜訪還有感而發，在臉書上撰文認為桃園藻礁應設為自然保留區，並留下「藻礁永存」字條 。</p>
+                </li>
+                <li>
+                    <p class="float-right">2014年7月7日</p>
+                    <p class="float-right_1">桃園縣政府依《野生動物保育法》公告劃定4公里範圍為桃園觀新藻礁生態系野生動物保護區。</p>
+                </li>
+                <li>
+                    <p class="float-right">2014年8月</p>
+                    <p class="float-right_1">石東化石場為運送大型器械，在觀音大堀溪口北岸建設臨時碼頭，藻礁因而遭破壞約2公頃 。</p>
+                </li>
+                <li>
+                    <p class="float-right">2017年6月8日</p>
+                    <p class="float-right_1">中研院生物多樣性研究中心，在桃園大潭藻礁發現一株柴山多杯孔珊瑚群體，投入研究 。</p>
+                </li>
+                <li>
+                    <p class="float-right">2017年10月17日</p>
+                    <p class="float-right_1">《蘋果日報》踢爆濕地學會提議一級保育野生動物柴山多杯孔珊瑚降級，收300萬研究費用護中油 。</p>
+                </li>
+                <li>
+                    <p class="float-right">2018年7月4日</p>
+                    <p class="float-right_1">桃園觀塘工業區開發案，遭環差會議退回 ，12日再度闖關 。</p>
+                </li>
+                <li>
+                    <p class="float-right">2018年10月8日</p>
+                    <p class="float-right_1">前環保署副署長詹順貴在中油三接案環評會議前，臉書3千字文宣布請辭，稍後此案環評通過 。</p>
+                </li>
+                <li>
+                    <p class="float-right">2020年3月28日 </p>
+                    <p class="float-right_1">中油三接棧橋新建工程工作船斷纜、擱淺，環團質疑藻礁生態遭影響破壞，引起社會矚目 。</p>
+                </li>
+                <li>
+                    <p class="float-right">2020年6月23日</p>
+                    <p class="float-right_1">環團發動「搶礁藻礁公投連署」， 展開第1階段連署 。</p>
+                </li>
+                <li>
+                    <p class="float-right">2020年12月17日</p>
+                    <p class="float-right_1">第1階段連署在12月上旬獲中選會審議通過，環團宣布展開第2階段「珍愛藻礁」公投連署 。</p>
+                </li>
+                <li>
+                    <p class="float-right">2021年2月22日</p>
+                    <p class="float-right_1">國民黨召開記者會支持大潭藻礁公投， 民進黨發言人簡舒培認為國民黨背後目的為「重啟核四」。<br>經濟部多日在臉書發布梗圖說明三接必要性，側翼粉專利用其內容開始攻擊環團，引發社會熱議。</p>
+                </li>
+                <li>
+                    <p class="float-right">2021年2月26日 </p>
+                    <p class="float-right_1">行政院長蘇貞昌強調藻礁是蔡政府上任後「全力護藻礁」把馬政府時代規劃的開發面積縮減9成以上。 。</p>
+                </li>
+                <li>
+                    <p class="float-right">2021年2月27日</p>
+                    <p class="float-right_1">珍愛藻礁公投一天就收逾3.4萬份，行動領銜人潘忠政在臉書貼文「感謝丞相賜箭」 。</p>
+                </li>
+                <li>
+                    <p class="float-right">2021年2月28日</p>
+                    <p class="float-right_1"> 珍愛藻礁公投突破連署門檻， 截至晚上9時，累計份數已達296697份，呼籲要衝上50萬份 。</p>
+                </li>
+            </ul>
+        </div>
     </div>
 
 
@@ -181,7 +276,7 @@
     <img src="photo/sun.png" id="sun">  
     <div id="last"></div>
     <footer id="footer">
-        CopyRight: TravelTaiwan Desigh By: Tracy
+        Creat By : Teams 6
     </footer>
 </div>
 
@@ -192,7 +287,7 @@
           <h4 class="modal-title">藻礁公投</h4>
         </div>
         <div class="modal-body">
-          <p class="text-center">距離公投還有 <span id="date"></span></p>
+          <p class="text-center">距離公投已過 <span id="date"></span></p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default button" data-dismiss="modal">關閉</button>
@@ -203,9 +298,33 @@
       </div>
     </div>
   </div>
+
+  <div class="modal fade" tabindex="-1" role="dialog" id="rate_modal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">投票率</h4>
+        </div>
+
+        <div class="modal-body">
+            <p class="text-center" style="display: inline-block; margin-right: 3vw;"><span id="area_name"></span></p>
+            <span style="display: inline-block;">
+                <div  id="rateGra" class="g-progress"></div>
+            </span>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default button" data-dismiss="modal">關閉</button>
+          <a href="https://referendums.2021.nat.gov.tw/?themeId=aad5b411b067a25611f7082f8fd6807c&voteType=REF&caseType=N&dataLevel=N">
+              <button type="button" class="btn btn-primary button">詳細資料</button>
+            </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 </body>
 </html>
 
-
-
+<!-- https://referendums.2021.nat.gov.tw/?themeId=79b8adc5242fb9232566f29a3114eddd&voteType=REF&caseType=N&dataLevel=N -->
 
