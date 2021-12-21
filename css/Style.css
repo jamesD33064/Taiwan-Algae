@@ -32,7 +32,10 @@
     background:#eee;
     color: #08A6BB;
 }
-
+#word>div>span{
+    display: inline-block;
+    padding: 3vw;
+}
 #frontpapge{
     display: flex;
     justify-content: center; 
@@ -63,7 +66,7 @@
     color: #929292;
     position: relative;
     font-family: 'PingFangTC', '微軟正黑體', sans-serif;
-    height: 2.25vw;  
+    height: 2vw;  
     border: 1px solid #ccc;
     width: 15vw; 
     margin-right: 10px;
@@ -73,17 +76,17 @@
     color: #929292;
     position: relative;
     font-family: 'PingFangTC', '微軟正黑體', sans-serif;
-    height: 2.25vw;  
+    height: 2vw;  
     border: 1px solid #ccc;
     width: 20vw; 
     margin-right: 10px;
     margin-left: auto;
 }
-#search{
-    width: 2.2vw;
-    height: 2.2vw;
-    transform: translate(0vw,0.9vw);
-    
+.g-progress {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: conic-gradient(#bbb 0%, #bbb 0%, #FFCDB2 0%, #FFCDB2 0%, #B5838D 0%);
 }
 .content{
     font-weight:bolder;
@@ -179,6 +182,16 @@
 }
 .jsp{
     text-align: center;
+    margin-left: 8vw;
+    margin-right: 8vw;
+}
+.float-right{
+    font-size: 1.25vw;
+    color:#08A6BB;
+}
+.float-right_1{
+    font-size: 1vw;
+    color:black;
 }
 .button {
     transition-duration: 0.4s;
