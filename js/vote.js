@@ -5,12 +5,36 @@ function sure_click(){
     var area=document.getElementById("frontselect_2");
     var index_1 = obj.selectedIndex;
     var index_2 = area.selectedIndex;
+    $("#rate_modal").modal("show");
+    const name = document.querySelector("#area_name");
+    var r = document.querySelector("#rateGra");
+    
     if(index_1==0){
-        $("#vote_modal").modal("show");
+        name.textContent = "花蓮";
     }
     else if(index_1==1){
         if(index_2==0){
-
+            name.textContent = "基隆";
+            r.style = "background: conic-gradient(#FFCDB2 0, #FFCDB2 40%, #B5838D 5%, #B5838D)"    
+        }
+        else if(index_2==1){
+            name.textContent = "宜蘭";
+            r.style = "background: conic-gradient(#FFCDB2 0, #FFCDB2 60%, #B5838D 5%, #B5838D)"    
+        }
+        else if(index_2==2){
+            name.textContent = "台北";
+        }
+        else if(index_2==3){
+            name.textContent = "新北";
+        }
+        else if(index_2==4){
+            name.textContent = "桃園";
+        }
+        else if(index_2==5){
+            name.textContent = "新竹縣";
+        }
+        else if(index_2==6){
+            name.textContent = "新竹市";
         }
     }
     else if(index_1==2){
