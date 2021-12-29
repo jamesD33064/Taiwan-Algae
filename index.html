@@ -4,7 +4,8 @@
 	<title>index</title>
 	<link href="./css/Style.css" rel="stylesheet">
     <script src="./js/index.js"></script>
-    <title>雲端應用服務從0到1</title>
+    <!-- <title>雲端應用服務從0到1</title> -->
+    <title>WEB程式設計</title>
     <meta charset="utf-8">
     <link href="./css/modal.css"  rel="stylesheet">
     <link href="./css/timeline.css"  rel="stylesheet">
@@ -16,7 +17,8 @@
     <div>
         <span>
             <img src="photo/view.png" id="view">
-            <h1 id="Taiwan" >雲端應用服務從0到1</h1>
+            <!-- <h1 id="Taiwan" >雲端應用服務從0到1</h1> -->
+            <h1 id="Taiwan" >WEB程式設計</h1>
         </span>
         <span>
             <ul id="nav">
@@ -51,18 +53,6 @@
             <!-- <div>
                 <span>
                     <h3 style="text-align: center; color:white;">北部投票率</h3>
-                    <progress id="N" value="32" max="100"></progress>
-                    <div class="g-progress"></div>
-                </span>
-                <span>
-                    <progress id="N" value="32" max="100"></progress>
-                    <div class="g-progress"></div>
-                </span>
-                <span>
-                    <progress id="N" value="32" max="100"></progress>
-                    <div class="g-progress"></div>
-                </span>
-                <span>
                     <progress id="N" value="32" max="100"></progress>
                     <div class="g-progress"></div>
                 </span>
@@ -299,7 +289,7 @@
           <h4 class="modal-title">藻礁公投</h4>
         </div>
         <div class="modal-body">
-          <p class="text-center">距離公投還有 <span id="date"></span></p>
+          <p class="text-center">距離公投已過 <span id="date"></span></p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default button" data-dismiss="modal">關閉</button>
@@ -317,13 +307,20 @@
         <div class="modal-header">
           <h4 class="modal-title">投票率</h4>
         </div>
-        <div class="modal-body">
-          <p class="text-center" style="display: inline-block; margin-right: 3vw;"><span id="area_name"></span></p>
-            <span style="display: inline-block;">
-                <progress id="N" value="32" max="100"></progress>
+
+        <div class="modal-body" id="rate">
+            <p class="text-center" style="display: block; margin-right: 3vw;"><span id="area_name"></span></p>
+            <div style="background: #bbb;"></div>
+            <p>無效票</p>
+            <div style="background: #FFCDB2;"></div>
+            <p>不同意票</p>
+            <div style="background: #B5838D;"></div>
+            <p>同意票</p>
+            <span style="display: block;">
                 <div  id="rateGra" class="g-progress"></div>
             </span>
         </div>
+
         <div class="modal-footer">
           <button type="button" class="btn btn-default button" data-dismiss="modal">關閉</button>
           <a href="https://referendums.2021.nat.gov.tw/?themeId=aad5b411b067a25611f7082f8fd6807c&voteType=REF&caseType=N&dataLevel=N">
