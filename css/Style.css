@@ -86,7 +86,7 @@
     width: 160px;
     height: 160px;
     border-radius: 50%;
-    background: conic-gradient(#FFCDB2 0, #FFCDB2 70%, #B5838D 25%, #B5838D);
+    background: conic-gradient(#bbb 0%, #bbb 0%, #FFCDB2 0%, #FFCDB2 0%, #B5838D 0%);
 }
 .content{
     font-weight:bolder;
@@ -209,6 +209,16 @@
     border-radius: 12px;
     background:#eee;
     color:#08A6BB;
+}
+#rate > p{
+    margin-left: 0.5vw;
+    margin-right: 2vw;
+    display: inline-block;
+}
+#rate > div{
+    width: 1vw;
+    height: 1vw; 
+    display: inline-block;
 }
 #footer{
     position: relative;
