@@ -29,11 +29,8 @@ function onTopClick(flag) {
     else if(flag==4){
         $("#vote_modal").modal("show");
         const dateText = document.querySelector("#date");
-        const currentDate = new Date();
-        const voteDate = 1639756800000;
-        const days = parseInt((voteDate - currentDate) / 86400000);
-        const hours = parseInt((voteDate - currentDate) / 3600000 - days * 24);
-
+        const days=0;
+        const hours=0;
         dateText.textContent = `${days}天${hours}小時`;
     }
 }

@@ -5,58 +5,74 @@ function sure_click(){
     var area=document.getElementById("frontselect_2");
     var index_1 = obj.selectedIndex;
     var index_2 = area.selectedIndex;
+    
+    if(index_1==0){
+        // name.textContent = "未選擇";
+    }
+    else{
+        $("#rate_modal").modal("show");
+        const name = document.querySelector("#area_name");
+        var r = document.querySelector("#rateGra");
+        if(index_1==1){
+            ar = new Array();
+            ar = ["基隆","宜蘭","台北","新北","桃園","新竹縣","新竹市"];
+            if(index_2==0){
+                name.textContent = ar[0];
+                const a_0=10;
+                const b_0=10;
+                makegra(a_0,b_0);
+            }
+            else if(index_2==1){
+                name.textContent = ar[1];
+                const a_1=10;
+                const b_1=20;
+                makegra(a_1,b_1);
+            }
+            else if(index_2==2){
+                name.textContent = ar[2];
+                const a_2=10;
+                const b_2=30;
+                makegra(a_2,b_2);
+            }
+            else if(index_2==3){
+                name.textContent = ar[3];
+                const a_3=10;
+                const b_3=40;
+                makegra(a_3,b_3);
+            }
+            else if(index_2==4){
+                name.textContent = ar[4];
+                const a_4=10;
+                const b_4=50;
+                makegra(a_4,b_4);
+            }
+            else if(index_2==5){
+                name.textContent = ar[5];
+                const a_5=10;
+                const b_5=60;
+                makegra(a_5,b_5);
+            }
+            else if(index_2==6){
+                name.textContent = ar[6];
+                const a_6=10;
+                const b_6=70;
+                makegra(a_6,b_6);
+            }
+        }
+    }
+}
+function makegra(a,b){
     $("#rate_modal").modal("show");
     const name = document.querySelector("#area_name");
     var r = document.querySelector("#rateGra");
-    
-    if(index_1==0){
-        name.textContent = "花蓮";
-    }
-    else if(index_1==1){
-        if(index_2==0){
-            name.textContent = "基隆";
-            r.style = "background: conic-gradient(#FFCDB2 0, #FFCDB2 40%, #B5838D 5%, #B5838D)"    
-        }
-        else if(index_2==1){
-            name.textContent = "宜蘭";
-            r.style = "background: conic-gradient(#FFCDB2 0, #FFCDB2 60%, #B5838D 5%, #B5838D)"    
-        }
-        else if(index_2==2){
-            name.textContent = "台北";
-        }
-        else if(index_2==3){
-            name.textContent = "新北";
-        }
-        else if(index_2==4){
-            name.textContent = "桃園";
-        }
-        else if(index_2==5){
-            name.textContent = "新竹縣";
-        }
-        else if(index_2==6){
-            name.textContent = "新竹市";
-        }
-    }
-    else if(index_1==2){
-        if(index_2==0){
-
-        }
-    }
-    else if(index_1==3){
-        if(index_2==0){
-
-        }
-    }
-    else if(index_1==4){
-        if(index_2==0){
-
-        }
-    }
-
-
-
+    b+=a;
+    r.style = rategra(a,b);
 }
 
+function rategra(a,b){
+    console.log(a);
+    return `background: conic-gradient(#bbb 0%, #bbb ${a}%, #FFCDB2 ${a}%, #FFCDB2 ${b}%, #B5838D ${b}%)`;
+}
 
 function change(){
     var obj=document.getElementById("frontselect_1");
